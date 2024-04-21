@@ -1,0 +1,84 @@
+﻿@{
+    ViewData["Title"] = "Registration";
+}
+
+@model User
+
+<form id="createUser" action="/home/Registration" method="post">
+    <div class="d-flex row">
+        <div class="col-md-6">
+            <label asp-for="PostName" class="form-label">Post name</label>
+            <select asp-for="PostName" class="form-control form-select">
+                <option value="Manager">Manager</option>
+                <option value="Assistant Manager">Assistant Manager</option>
+                <option value="Security Guard">Security Guard</option>
+            </select>
+            <span asp-validation-for="PostName" class="text-danger"></span>
+        </div>
+        <div class="col-md-6">
+            <label asp-for="NearestPostLocation" class="form-label">Nearest Post Location</label>
+            <input asp-for="NearestPostLocation" type="text" class="form-control" />
+            <span asp-validation-for="NearestPostLocation" class="text-danger"></span>
+        </div>
+        <div class="col-md-6">
+            <label asp-for="FirstName" class="form-label">First name</label>
+            <input asp-for="FirstName" type="text" class="form-control" />
+            <span asp-validation-for="FirstName" class="text-danger"></span>
+        </div>
+        <div class="col-md-6">
+            <label class="form-label" asp-for="LastName">Last name</label>
+            <input type="text" asp-for="LastName" class="form-control" />
+            <span asp-validation-for="LastName" class="text-danger"></span>
+        </div>
+
+        <div class="col-md-6">
+            <label class="form-label" asp-for="Email">Email</label>
+            <input type="email" asp-for="Email" class="form-control" />
+            <span asp-validation-for="Email" class="text-danger"></span>
+        </div>
+
+        <div class="col-md-6">
+            <label class="form-label" asp-for="PhoneNumber">Phone</label>
+            <input type="number" asp-for="PhoneNumber" class="form-control" />
+            <span asp-validation-for="PhoneNumber" class="text-danger"></span>
+        </div>
+
+        <div class="col-md-6">
+            <label class="form-label" asp-for="AdhaarCardNumber">Adhaar Card</label>
+            <input type="number" asp-for="AdhaarCardNumber" class="form-control" />
+            <span asp-validation-for="AdhaarCardNumber" class="text-danger"></span>
+        </div>
+
+        <div class="col-md-6">
+            <label class="form-label" asp-for="PanCardNumber">Pan Card</label>
+            <input type="test" asp-for="PanCardNumber" class="form-control" />
+            <span asp-validation-for="PanCardNumber" class="text-danger"></span>
+        </div>
+
+        <div class="col-md-10">
+            <label class="form-label" asp-for="PermanentAddress">Permanent Address</label>
+            <input type="text" asp-for="PermanentAddress" class="form-control" />
+            <span asp-validation-for="PermanentAddress" class="text-danger"></span>
+        </div>
+
+        <div class="col-md-2">
+            <label class="form-label" asp-for="PinCode">Pin Code</label>
+            <input type="number" asp-for="PinCode" class="form-control" />
+            <span asp-validation-for="PinCode" class="text-danger"></span>
+        </div>
+
+        <div class="col-md-10">
+            <label class="form-label" asp-for="CurrentAddress">Current Address</label>
+            <input type="text" asp-for="CurrentAddress" class="form-control" />
+        </div>
+
+        <div class="col-md-2">
+            <label class="form-label" asp-for="PinCode2">Current Pin Code</label>
+            <input type="number" asp-for="PinCode2" class="form-control" />
+        </div>
+        <div class="text-end">
+            <button type="submit" id="registration" class="btn btn-primary my-4">Next</button>
+        </div>
+        <span id="errorSection" class="d-none text-danger"></span>
+    </div>
+</form>
