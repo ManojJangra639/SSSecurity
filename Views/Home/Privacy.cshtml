@@ -1,0 +1,32 @@
+﻿@{
+    ViewData["Title"] = "Document Upload";
+}
+
+@model ContentViewModel
+
+    <form id="uploadForm" action="/home/upload" method="post" enctype="multipart/form-data">
+
+    <div class="form-group">
+        <label asp-for="AadharCard"></label>
+        <input asp-for="AadharCard" type="file" class="form-control mb-2" />
+        <span asp-validation-for="AadharCard" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="PanCard"></label>
+        <input asp-for="PanCard" type="file" class="form-control mb-2" />
+        <span asp-validation-for="PanCard" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Doc1">10th Certificate</label>
+        <input asp-for="Doc1" type="file" class="form-control mb-2" />
+        <span asp-validation-for="Doc1" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Doc2">12th Certificate</label>
+        <input asp-for="Doc2" type="file" class="form-control" />
+        <span asp-validation-for="Doc2" class="text-danger"></span>
+    </div>
+    <div class="d-flex mt-3 justify-content-end">
+    <button type="submit" id="uploadButton" class="btn btn-primary">Next</button>
+    </div>
+</form>
