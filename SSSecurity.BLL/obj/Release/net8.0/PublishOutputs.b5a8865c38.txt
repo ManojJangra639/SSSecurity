@@ -1,3 +1,0 @@
-D:\Learn\SSSecurity\Publish\BL\SSSecurity.BLL.dll
-D:\Learn\SSSecurity\Publish\BL\SSSecurity.BLL.deps.json
-D:\Learn\SSSecurity\Publish\BL\SSSecurity.BLL.pdb
