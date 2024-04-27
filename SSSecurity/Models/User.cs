@@ -10,10 +10,10 @@ namespace SSSecurity.Models
     {
         public int Id { get; set; }
         [Required]
-        [DisplayName("First Name")]
+        [DisplayName("Full Name")]
         public string FirstName { get; set; }
         [Required]
-        [DisplayName("Last Name")]
+        [DisplayName("Mother Name")]
         public string LastName { get; set; }
         [Required]
         [DisplayName("Email")]
@@ -25,8 +25,12 @@ namespace SSSecurity.Models
         [DisplayName("Post Name")]
         public string PostName { get; set; }
         [Required]
-        [DisplayName("Nearest Post Location")]
-        public string NearestPostLocation { get; set; }
+        [DisplayName("Location First")]
+        public string NearestPostLocation1 { get; set; }
+        [DisplayName("Location Second")]
+        public string NearestPostLocation2 { get; set; }
+        [DisplayName("Location Third")]
+        public string NearestPostLocation3 { get; set; }
         [Required]
         [DisplayName("AdhaarCard Number")]
         public string AdhaarCardNumber { get; set; }

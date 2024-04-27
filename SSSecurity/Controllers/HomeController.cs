@@ -18,7 +18,7 @@ namespace SSSecurity.Controllers
             return View();
         }
 
-        public IActionResult Privacy()
+        public IActionResult Document()
         {
             return View();
         }
@@ -34,7 +34,7 @@ namespace SSSecurity.Controllers
         }
 
         [HttpPost]
-        [ValidateAntiForgeryToken]
+        //[ValidateAntiForgeryToken]
         public IActionResult Registration(User user)
         {
             if (ModelState.IsValid)
@@ -67,8 +67,8 @@ namespace SSSecurity.Controllers
 
                 // Write the serialized data back to the file
                 System.IO.File.WriteAllText(_filePath, serializedData);
-                ViewBag["email"] = user.Email;
-                return RedirectToAction(nameof(Privacy));
+                //ViewBag.email = user.Email;
+                return RedirectToAction(nameof(Document));
             }
             return RedirectToAction(nameof(Index));
         }
