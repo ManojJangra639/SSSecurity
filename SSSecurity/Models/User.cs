@@ -41,9 +41,26 @@ namespace SSSecurity.Models
         [DisplayName("Permanent Address")]
         public string PermanentAddress { get; set; }
         [Required]
+        [DisplayName("Village")]
+        public string Village { get; set; }
+        [DisplayName("PostOffice")]
+        public string PostOffice { get; set; }
+        [DisplayName("District")]
+        public string District { get; set; }
+        [DisplayName("State")]
+        public string State { get; set; }
         [DisplayName("Pin Code")]
         public string PinCode { get; set; }
         public string CurrentAddress { get; set; }
+        [DisplayName("Village")]
+        public string Village2 { get; set; }
+        [DisplayName("PostOffice")]
+        public string PostOffice2 { get; set; }
+        [DisplayName("District")]
+        public string District2 { get; set; }
+        [DisplayName("State")]
+        public string State2 { get; set; }
+        [DisplayName("Pin Code")]
         public string PinCode2 { get; set; }
     }
 }
