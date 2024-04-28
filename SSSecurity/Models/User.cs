@@ -38,9 +38,6 @@ namespace SSSecurity.Models
         [DisplayName("Pan Card Number")]
         public string PanCardNumber { get; set; }
         [Required]
-        [DisplayName("Permanent Address")]
-        public string PermanentAddress { get; set; }
-        [Required]
         [DisplayName("Village")]
         public string Village { get; set; }
         [DisplayName("PostOffice")]
@@ -51,8 +48,8 @@ namespace SSSecurity.Models
         public string State { get; set; }
         [DisplayName("Pin Code")]
         public string PinCode { get; set; }
-        public string CurrentAddress { get; set; }
-        [DisplayName("Village")]
+        [DisplayName("Ex-Serviceman")]
+        public bool ExServiceman { get; set; }
         public string Village2 { get; set; }
         [DisplayName("PostOffice")]
         public string PostOffice2 { get; set; }
