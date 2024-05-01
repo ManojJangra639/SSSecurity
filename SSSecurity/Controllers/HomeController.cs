@@ -61,6 +61,7 @@ namespace SSSecurity.Controllers
                 }
 
                 user.Id = users.Any() ? users.Max(u => u.Id) + 1 : 1;
+                user.CreatedDate = DateTime.Now;
                 users.Add(user);
 
                 string serializedData = JsonSerializer.Serialize(users);

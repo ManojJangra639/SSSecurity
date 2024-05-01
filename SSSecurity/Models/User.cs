@@ -59,5 +59,6 @@ namespace SSSecurity.Models
         public string State2 { get; set; }
         [DisplayName("Pin Code")]
         public string PinCode2 { get; set; }
+        public DateTime CreatedDate { get; set; }
     }
 }
